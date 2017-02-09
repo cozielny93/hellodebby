@@ -20,14 +20,38 @@
             
             <input type="number" id="first"><br>
             <input type="number" id="second"><br>
-         
+            <input type="number" id="third"><br>
+            <input type="number" id="fourth"><br>       
         <div>   
             <p id="resultado">Resultado</p>
             <script>
                 function myfunction() {
+                    var divisor = 0;
+                    var total = 0;
                     var a = parseInt(document.getElementById("first").value);
                     var b = parseInt(document.getElementById("second").value);
-                    var x = a + b;
+                    var c = parseInt(document.getElementById("third").value);
+                    var d = parseInt(document.getElementById("fourth").value);
+                    if (isFinite(a)) {
+                        total = total + a;
+                        divisor = divisor + 1;
+                    }
+                    if (isFinite(b)) {
+                        total = total + b;
+                        divisor = divisor + 1;
+                    }
+                    if (isFinite(c)) {
+                        total = total + c;
+                        divisor = divisor + 1;
+                    }
+                    if (isFinite(d)) {
+                        total = total + d;
+                        divisor = divisor + 1;
+                    }
+
+                    alert(total);
+                    alert(divisor);
+                    var x = total / divisor;
                     document.getElementById("resultado").innerHTML = x;
 
                 }    
