@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Basic Statistics</title>
+        <link rel="StyleSheet" href="StyleSheet.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="titulo">Unidades de Medición Central</h1>
+        </header>
+        <div>
+            <h2 id="subtitulo">Media Aritmética Ponderada</h2>
+
+        
+         <p>Digite los valores </p>
+           
+        </div>
+            
+            <input type="number" id="first"><br>
+            <input type="number" id="second"><br>
+         
+        <div>   
+            <p id="resultado">Resultado</p>
+            <script>
+                function myfunction() {
+                    var a = parseInt(document.getElementById("first").value);
+                    var b = parseInt(document.getElementById("second").value);
+                    var x = a + b;
+                    document.getElementById("resultado").innerHTML = x;
+
+                }    
+
+
+            </script>
+        </div>
+        <div>
+        <button type="button" onclick="myfunction()">Calcular</button>
+        </div>
+    </body>
+</html>

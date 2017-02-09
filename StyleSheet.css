@@ -1,0 +1,29 @@
+body {
+    background-color: #808080;
+    
+   
+}
+
+#titulo {
+    
+    color: #4da6e8;
+    font-family: Harrington, Arial;
+    font-size: large;
+    
+}
+#subtitulo {
+    
+    color: #4da6e8;
+    font-family: Harrington;
+    font-size: medium;
+    
+}
+
+#resultado {
+    
+    color: #ff6a00;
+    font-family: 'Bodoni MT';
+    font-size: x-large
+        
+}
+
